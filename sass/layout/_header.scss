@@ -1,0 +1,55 @@
+@import "../utils/mixins";
+
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  #sidebar-active {
+    display: none;
+
+    &:checked ~ #overlay {
+      background-color: rgba($color: #525252, $alpha: 0.1);
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9;
+    }
+  }
+
+  @include phone {
+    #sidebar-active:checked ~ .links-container {
+      background-color: bisque;
+      right: 0;
+    }
+    
+    .links-container {
+      position: fixed;
+      width: 50%;
+      height: 100%;
+      top: 0;
+      right: -100%;
+      z-index: 10;
+      transition: 0.1s ease-out;
+
+      .sidebar-links,
+      .back-link {
+        padding: 1rem;
+        display: block;
+      }
+    }
+  }
+
+  @include media(pad, pc) {
+    .navbar-menu {
+      display: none;
+    }
+
+    .back-link {
+      display: none;
+    }
+  }
+}

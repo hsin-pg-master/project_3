@@ -24,3 +24,22 @@
     @content;
   }
 }
+
+// define multiple screen sizes use the same style
+@mixin media($keys...) {
+  @each $key in $keys {
+    @if ($key == phone) {
+      @include phone {
+        @content;
+      }
+    } @else if ($key == pad) {
+      @include pad {
+        @content;
+      }
+    } @else if ($key == pc) {
+      @include pc {
+        @content;
+      }
+    }
+  }
+}

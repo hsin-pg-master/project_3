@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="sass/main.css">
   <title>首頁</title>
 </head>
+
 <body>
   <!-- h1 tag is created by feature/html_1 -->
-
+  <h1 class="h1-hide" id="h1-hide">首頁</h1>
   <!-- header is created by feature/html_1 -->
+  <header>
+    <div class="logo">
+      <a href="#"><img src="./imgs/Logo.png" alt="logo"></a>
+    </div>
+
+    <div class="navbar-nav">
+      <input type="checkbox" id="sidebar-active">
+      <label for="sidebar-active" class="navbar-menu"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+        viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+      </svg></label>
+
+      <label id="overlay" for="sidebar-active"></label>
+
+      <div class="links-container">
+        <label class="back-link" for="sidebar-active"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+          width="24px" fill="#e8eaed">
+          <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
+        </svg></label>
+
+        <a class="sidebar-links" href="#">首頁</a>
+        <a class="sidebar-links" href="#">商品</a>
+        <a class="sidebar-links" href="#">購物車</a>
+        <a class="sidebar-links" href="#">登入</a>
+      </div>
+    </div>
+  </header>
+
+
 
   <!-- carousel is created by feature/html_1 -->
 
@@ -19,4 +50,5 @@
 
   <!-- ToTopBotton is created by feature/html_2 -->
 </body>
+
 </html>

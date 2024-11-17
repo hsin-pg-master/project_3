@@ -12020,4 +12020,95 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+html {
+  margin: 0 auto;
+  max-width: 1024px;
+  scroll-behavior: smooth;
+}
+
+a {
+  padding: 1rem;
+  text-decoration: none;
+  color: rgb(30, 30, 30);
+}
+a:hover {
+  color: rgb(255, 0, 0);
+  background-color: rgb(24, 0, 131);
+}
+
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header #sidebar-active {
+  display: none;
+}
+header #sidebar-active:checked ~ #overlay {
+  background-color: rgba(82, 82, 82, 0.1);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+@media (max-width: 767px) {
+  header {
+    font-size: 16px;
+    background-color: rgb(200, 0, 0);
+  }
+  header #sidebar-active:checked ~ .links-container {
+    background-color: bisque;
+    right: 0;
+  }
+  header .links-container {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    z-index: 10;
+    transition: 0.1s ease-out;
+  }
+  header .links-container .sidebar-links,
+  header .links-container .back-link {
+    padding: 1rem;
+    display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  header {
+    font-size: 18px;
+    background-color: rgb(0, 200, 0);
+  }
+  header .navbar-menu {
+    display: none;
+  }
+  header .back-link {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    font-size: 20px;
+    background-color: rgb(0, 0, 200);
+  }
+  header .navbar-menu {
+    display: none;
+  }
+  header .back-link {
+    display: none;
+  }
+}
+
+.h1-hide {
+  background-color: red;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  top: -1px;
 }/*# sourceMappingURL=main.css.map */
