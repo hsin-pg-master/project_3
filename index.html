@@ -12,35 +12,40 @@
   <!-- h1 tag is created by feature/html_1 -->
   <h1 class="h1-hide" id="h1-hide">首頁</h1>
   <!-- header is created by feature/html_1 -->
-  <header>
-    <div class="logo">
-      <a href="#"><img src="./imgs/Logo.png" alt="logo"></a>
+  <header class="d-flex justify-content-between">
+    <div class="container ms-sm-0">
+      <a href="#"><img src="./imgs/Logo.png" alt="logo" class="p-3"></a>
     </div>
 
-    <div class="navbar-nav">
-      <input type="checkbox" id="sidebar-active">
-      <label for="sidebar-active" class="navbar-menu"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-        viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-      </svg></label>
+    <input type="checkbox" id="sidebar-active" class="d-none">
+    <label for="sidebar-active" class="my-auto mx-3 p-3 d-md-none navbar-menu"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+      viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+      <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+    </svg></label>
 
-      <label id="overlay" for="sidebar-active"></label>
+    <label id="overlay" for="sidebar-active" class="position-fixed z-2"></label>
 
-      <div class="links-container">
-        <label class="back-link" for="sidebar-active"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
-          width="24px" fill="#e8eaed">
+    <ul class="nav container align-items-center z-3">
+      <li class="nav-item">
+        <label class="nav-link link-warning d-md-none" for="sidebar-active"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+          viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
           <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
         </svg></label>
-
-        <a class="sidebar-links" href="#">首頁</a>
-        <a class="sidebar-links" href="#">商品</a>
-        <a class="sidebar-links" href="#">購物車</a>
-        <a class="sidebar-links" href="#">登入</a>
-      </div>
-    </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link link-warning" href="#">首頁</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link link-warning" href="#">商品</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link link-warning" href="#">購物車</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link link-warning" href="#">登入</a>
+      </li>
+    </ul>
   </header>
-
-
 
   <!-- carousel is created by feature/html_1 -->
 
