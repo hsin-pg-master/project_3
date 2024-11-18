@@ -7421,6 +7421,10 @@ textarea.form-control-lg {
   top: 50% !important;
 }
 
+.top-90 {
+  top: 90% !important;
+}
+
 .top-100 {
   top: 100% !important;
 }
@@ -7431,6 +7435,10 @@ textarea.form-control-lg {
 
 .bottom-50 {
   bottom: 50% !important;
+}
+
+.bottom-90 {
+  bottom: 90% !important;
 }
 
 .bottom-100 {
@@ -7445,6 +7453,10 @@ textarea.form-control-lg {
   left: 50% !important;
 }
 
+.start-90 {
+  left: 90% !important;
+}
+
 .start-100 {
   left: 100% !important;
 }
@@ -7455,6 +7467,10 @@ textarea.form-control-lg {
 
 .end-50 {
   right: 50% !important;
+}
+
+.end-90 {
+  right: 90% !important;
 }
 
 .end-100 {
@@ -12019,16 +12035,6 @@ html {
   margin: 0 auto;
   max-width: 1024px;
   scroll-behavior: smooth;
-}
-
-a {
-  padding: 1rem;
-  text-decoration: none;
-  color: rgb(30, 30, 30);
-}
-a:hover {
-  color: rgb(255, 0, 0);
-  background-color: rgb(24, 0, 131);
 }
 
 header #sidebar-active:checked ~ #overlay {
